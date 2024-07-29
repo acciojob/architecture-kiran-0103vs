@@ -4,10 +4,68 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 1100px;
+            margin: 20px auto;
+        }
+        .imageContainer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .imageContainer img {
+            max-width: 100%;
+            height: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .column-1, .column-3 {
+            width: 200px;
+        }
+        .column-2 {
+            width: 600px;
+        }
+        td img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div class="container">
+        <div class="imageContainer">
+            <img src="main-architecture.jpg" alt="Main Architecture Image">
+        </div>
+        <table>
+            <tr>
+                <td class="column-1"><img src="architecture1.jpg" alt="Architecture Image 1"></td>
+                <td class="column-2">This is some text content related to the architecture.</td>
+                <td class="column-3"><img src="architecture2.jpg" alt="Architecture Image 2"></td>
+            </tr>
+            <tr>
+                <td class="column-1"><img src="architecture3.jpg" alt="Architecture Image 3"></td>
+                <td class="column-2">This is some more text content related to the architecture.</td>
+                <td class="column-3"><img src="architecture4.jpg" alt="Architecture Image 4"></td>
+            </tr>
+        </table>
+    </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
